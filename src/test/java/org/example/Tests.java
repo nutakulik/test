@@ -50,6 +50,8 @@ public class Tests {
         String [] userName = profilePage.getUserName().split("@");
         Assert.assertEquals(userName[0], ConfProperties.getProperty("validLogin"));
 
+        profilePage.clickUser();
+        profilePage.clickLogOutBtn();
 //        profilePage.closeTab();
     }
 //
