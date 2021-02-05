@@ -1,25 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.example.Tests
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 99.811 s <<< FAILURE! - in org.example.Tests
-logIn(org.example.Tests)  Time elapsed: 8.013 s  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <div class="user-pic user-pic_has-plus_ user-account__pic">...</div> is not clickable at point (1463, 30). Other element would receive the click: <div class="user-account user-account_has-subname_yes legouser__account i-bem" data-bem="{&quot;user-account&quot;:{}}" tabindex="0">...</div>
-  (Session info: chrome=87.0.4280.141)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-02TV3LR', ip: '172.27.127.154', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\panas\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63709}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d3abfa8e7d7d083b365f6448faa30a6e
-	at org.example.Tests.logIn(Tests.java:53)
-
-end(org.example.Tests)  Time elapsed: 3.946 s  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-invalid session id
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-02TV3LR', ip: '172.27.127.154', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\panas\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63709}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d3abfa8e7d7d083b365f6448faa30a6e
-	at org.example.Tests.end(Tests.java:39)
-
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 61.062 s - in org.example.Tests

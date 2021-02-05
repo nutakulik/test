@@ -50,8 +50,9 @@ public class Tests {
         String [] userName = profilePage.getUserName().split("@");
         Assert.assertEquals(userName[0], ConfProperties.getProperty("validLogin"));
 
-        profilePage.clickUser();
         profilePage.clickLogOutBtn();
+
+        driver.manage().deleteAllCookies();
 
         ArrayList<String> newTab= new ArrayList <String>(driver.getWindowHandles());
         driver.close();
@@ -71,6 +72,7 @@ public class Tests {
         profilePage.clickLogOutBtn();
         String URLLogin = driver.getCurrentUrl();
         Assert.assertNotEquals(URLLogin,URLProfile);
+
         ArrayList<String> newTab= new ArrayList <String>(driver.getWindowHandles());
         driver.close();
         driver.switchTo().window(newTab.get(0));
@@ -105,6 +107,7 @@ public class Tests {
         WebDriverWait wait = new WebDriverWait(driver, 60);
         wait.until(ExpectedConditions.textToBePresentInElement(loginPage.errorTextLogin, "Такого аккаунта нет"));
         Assert.assertEquals(loginPage.errorTextLogin.getText(),"Такого аккаунта нет");
+
         ArrayList<String> newTab= new ArrayList <String>(driver.getWindowHandles());
         driver.close();
         driver.switchTo().window(newTab.get(0));

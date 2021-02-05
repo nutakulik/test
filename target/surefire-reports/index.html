@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.Tests" hash-for-method="logIn">logIn</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -131,6 +117,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.Tests" hash-for-method="logIn">logIn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.example.Tests" hash-for-method="logOut">logOut</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -151,42 +142,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">org.example.Tests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="logIn">
-                  </a> <!-- logIn -->
-                  <span class="method-name">logIn</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;user-pic user-pic_has-plus_ user-account__pic&quot;&gt;...&lt;/div&gt; is not clickable at point (1463, 30). Other element would receive the click: &lt;div class=&quot;user-account user-account_has-subname_yes legouser__account i-bem&quot; data-bem=&quot;{&amp;quot;user-account&amp;quot;:{}}&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=87.0.4280.141)
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;DESKTOP-02TV3LR&apos;, ip: &apos;172.27.127.154&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\panas\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63709}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d3abfa8e7d7d083b365f6448faa30a6e
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at org.example.ProfilePage.clickUser(ProfilePage.java:27)
-	at org.example.Tests.logIn(Tests.java:53)
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -212,6 +167,13 @@ Session ID: d3abfa8e7d7d083b365f6448faa30a6e
                   <a name="failPassword">
                   </a> <!-- failPassword -->
                   <span class="method-name">failPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logIn">
+                  </a> <!-- logIn -->
+                  <span class="method-name">logIn</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -283,34 +245,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'logOut')
+data.setCell(0, 1, 'failPassword')
 data.setCell(0, 2, 'org.example.Tests')
-data.setCell(0, 3, 48475);
+data.setCell(0, 3, 20092);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'navigate')
 data.setCell(1, 2, 'org.example.Tests')
-data.setCell(1, 3, 18182);
+data.setCell(1, 3, 13862);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'logIn')
 data.setCell(2, 2, 'org.example.Tests')
-data.setCell(2, 3, 7996);
+data.setCell(2, 3, 5540);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'failPassword')
+data.setCell(3, 1, 'logOut')
 data.setCell(3, 2, 'org.example.Tests')
-data.setCell(3, 3, 3712);
+data.setCell(3, 3, 5288);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'changeLanguage')
 data.setCell(4, 2, 'org.example.Tests')
-data.setCell(4, 3, 3503);
+data.setCell(4, 3, 3899);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'failLogin')
 data.setCell(5, 2, 'org.example.Tests')
-data.setCell(5, 3, 3391);
+data.setCell(5, 3, 1557);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 50 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -343,76 +305,48 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">failLogin</span>
-                <span class="method-start">11279 ms</span>
+                <span class="method-start">8974 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">end</span>
-                <span class="method-start">14687 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">14866 ms</span>
+                <span class="method-start">10549 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">failPassword</span>
-                <span class="method-start">14870 ms</span>
+                <span class="method-start">10552 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">end</span>
-                <span class="method-start">18585 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">18654 ms</span>
+                <span class="method-start">30647 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">logIn</span>
-                <span class="method-start">18659 ms</span>
+                <span class="method-start">30650 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">end</span>
-                <span class="method-start">26677 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">26803 ms</span>
+                <span class="method-start">36193 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">logOut</span>
-                <span class="method-start">26807 ms</span>
+                <span class="method-start">36199 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">end</span>
-                <span class="method-start">75284 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">75377 ms</span>
+                <span class="method-start">41489 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">navigate</span>
-                <span class="method-start">75382 ms</span>
+                <span class="method-start">41495 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">end</span>
-                <span class="method-start">93566 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">93717 ms</span>
+                <span class="method-start">55362 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">changeLanguage</span>
-                <span class="method-start">93728 ms</span>
+                <span class="method-start">55366 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">end</span>
-                <span class="method-start">97233 ms</span>
-              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

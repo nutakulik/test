@@ -26,8 +26,10 @@ public class LoginPage {
     public void setLoginInput(String login ){
 //        WebDriverWait wait = new WebDriverWait(driver, 60);
 //        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(@id, 'passp-field-login')]")));
-        inputLogin.clear();
-        this.inputLogin.sendKeys(login);
+
+            inputLogin.clear();
+            this.inputLogin.sendKeys(login);
+
     }
     @FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div[2]/div/div/div[2]/div[3]/div/div/div/div[1]/form/div[3]/button")
     private WebElement SignButtonLogin;
