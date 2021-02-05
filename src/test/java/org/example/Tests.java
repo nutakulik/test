@@ -141,9 +141,9 @@ public class Tests {
         Assert.assertTrue(URL.contains("translate"));
         startPage.closeTab();
 
-        startPage.clickMusic();
-        URL = driver.getCurrentUrl();
-        Assert.assertTrue(URL.contains("music"));
+//        startPage.clickMusic();
+//        URL = driver.getCurrentUrl();
+//        Assert.assertTrue(URL.contains("music"));
         //startPage.closeTab();
         ArrayList<String> newTab= new ArrayList <String>(driver.getWindowHandles());
         driver.close();
